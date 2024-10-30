@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Tree Store</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    </head>
+    <body>
+        <h1>Welcome to the Tree Store</h1>
+        <h2>Available Trees:</h2>
+        <ul>
+            <li th:each="tree : ${trees}" th:text="${tree}"></li>
+        </ul>
+    </body>
+</html>
